@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cmwdw8kgbef6b"]
+
+[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=1828249390]
+
+[node name="Jugador" type="Jugador" parent="." unique_id=1743354687]
+velocidad = 1000.0
+texture_repeat = 1
+position = Vector2(580.2275, 371.76175)
+texture = ExtResource("1_wtcfe")
