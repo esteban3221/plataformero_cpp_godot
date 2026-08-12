@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cmwdw8kgbef6b"]
+
+[ext_resource type="PackedScene" uid="uid://bv0baddxa3phw" path="res://Escenas/bordes/suelo.tscn" id="1_uahsp"]
+
+[node name="Nivel_test" type="Node2D" unique_id=1828249390]
+
+[node name="Suelo" parent="." unique_id=865743864 instance=ExtResource("1_uahsp")]
+position = Vector2(0, 20)

@@ -11,14 +11,26 @@ config_version=5
 [application]
 
 config/name="Nuevo Proyecto de Juego"
-run/main_scene="uid://cmwdw8kgbef6b"
+run/main_scene="uid://bl1xd0mle04eu"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/minimize_disabled=true
+window/size/maximize_disabled=true
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="viewport"
+
+[layer_names]
+
+2d_physics/layer_1="Solido"
+2d_physics/layer_2="Daño"
+2d_physics/layer_3="Jugador"
+2d_physics/layer_4="Recolectables"
 
 [physics]
 
@@ -26,4 +38,8 @@ window/stretch/aspect="expand"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+environment/ssao/quality=3
+environment/subsurface_scattering/subsurface_scattering_quality=2
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

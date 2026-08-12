@@ -1,29 +1,28 @@
 #include "register_types.h"
-#include "player.h" // 1. Incluir encabezado
 #include <gdextension_interface.h>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
+
+// Clases
+#include "lvl1/controllers/controlador_jugador.h"
 
 using namespace godot;
 
 void initialize_plataformero_module(ModuleInitializationLevel p_level)
 {
     if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE)
-    {
         return;
-    }
 
-    GDREGISTER_CLASS(Jugador); // 2. Registrar clase
-    godot::UtilityFunctions::print("Módulo 'plataformero' inicializado correctamente.");
+    GDREGISTER_CLASS(ControladorJugador);
+    godot::UtilityFunctions::print("Modulo 'plataformero' inicializado correctamente.");
 }
 
 void uninitialize_plataformero_module(ModuleInitializationLevel p_level)
 {
     if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE)
-    {
         return;
-    }
-    godot::UtilityFunctions::print("Módulo 'plataformero' terminado correctamente.");
+
+    godot::UtilityFunctions::print("Modulo 'plataformero' terminado correctamente.");
 }
 
 extern "C"

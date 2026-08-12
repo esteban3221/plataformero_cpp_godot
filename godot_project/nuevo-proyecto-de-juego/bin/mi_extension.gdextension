@@ -6,3 +6,6 @@ reloadable = true
 [libraries]
 linux.debug.x86_64 = "res://bin/libplataformero.linux.template_debug.x86_64.so"
 linux.release.x86_64 = "res://bin/libplataformero.linux.template_release.x86_64.so"
+windows.debug.x86_64 = "res://bin/libplataformero.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "res://bin/libplataformero.windows.template_release.x86_64.dll"
+macos.debug.universal = "res://bin/libplataformero.macos.template_debug.framework"

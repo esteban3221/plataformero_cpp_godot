@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bl1xd0mle04eu"]
+
+[ext_resource type="PackedScene" uid="uid://bqvg6bmcvbryb" path="res://Escenas/Niveles/Nivel1.tscn" id="1_wmjee"]
+[ext_resource type="PackedScene" uid="uid://c2mvfx4riraqa" path="res://Escenas/Jugador.tscn" id="2_ripk3"]
+
+[node name="Escena Principal" type="Node2D" unique_id=86008063]
+position = Vector2(-1, 0)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1181054247]
+position = Vector2(9, -5)
+offset = Vector2(151, 96)
+
+[node name="Nivel1" parent="." unique_id=505720594 instance=ExtResource("1_wmjee")]
+position = Vector2(0, 0)
+
+[node name="Jugador" parent="." unique_id=350372384 instance=ExtResource("2_ripk3")]
+position = Vector2(255, 59.019592)
+velocity = Vector2(0, 0)
